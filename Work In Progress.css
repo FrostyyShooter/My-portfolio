@@ -1,0 +1,11 @@
+.WIP {
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    color: var(--text-color);
+    font-size: 5em;
+    background-color: var(--dark-grey-opacity-1);
+    backdrop-filter: blur(5px);
+    padding: 2em;
+    border-radius: 1em;
+}
