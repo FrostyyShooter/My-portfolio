@@ -137,7 +137,50 @@ footer {
 
 /* phone design */
 @media screen and (max-width: 1115px) {
-    .nav-bar {
-        background-color: red;
+    /* remake nav-bar from top to bottom */
+    
+    /* tab adjustment */
+    .tab-1-container, .tab-2-container, .tab-3-container, .tab-4-container {
+        width: 60vw;
+    }
+    .tab-1-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--dark-grey-opacity-1);
+        backdrop-filter: blur(5px);
+        padding: 2.5em;
+        border-radius: 30px;
+        color:var(--text-color);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .tab-1-container h1 {
+        margin-top: 40px;
+        font-size: 2em;
+    }
+    .scroll-tab-1 img {
+        display: block;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin-inline: 1em;
+    }
+    .tab-1-container h2 {
+        padding-top: 1em;
+        font-size: 1.5em;
+    }
+    .tab-1-container p, .tab-2-container p, .tab-3-container p, .tab-4-container p {
+        font-size: 1em;
+    }
+    .tab-2-container, .tab-3-container, .tab-4-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--dark-grey-opacity-1);
+        backdrop-filter: blur(5px);
+        padding: 2.5em;
+        border-radius: 30px;
+        color:var(--text-color);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     }
 }
