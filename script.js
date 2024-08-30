@@ -1,3 +1,4 @@
+// THIS IS THE MAIN SCRIPT FILE FOR THE PROJECT
 // declare variables
 var tabButton1 = document.getElementById('scrollButton1');
 var tabButton2 = document.getElementById('scrollButton2');

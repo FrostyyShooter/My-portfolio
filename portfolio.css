@@ -1,0 +1,27 @@
+/* make a grid layout for the projects.
+cards should be scrollable horizontally.
+content is in the center of the card. */
+.projectOverview {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 60px;
+    overflow-x: scroll;
+    width: 100%;
+}
+.projectCard-1, .projectCard-2, .projectCard-3, .projectCard-4, .projectCard-5, .projectCard-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-grey-opacity-1);
+    backdrop-filter: blur(5px);
+    padding: 2em;
+    border-radius: 30px;
+    color: var(--text-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    width: 30vw;
+    height: 20vw;
+}
+.projectCard-1, .projectCard-2, .projectCard-3 {
+    grid-row: 1;
+}
