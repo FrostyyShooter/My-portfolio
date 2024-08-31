@@ -8,7 +8,12 @@ content is in the center of the card. */
     overflow-x: scroll;
     width: 100%;
 }
-.projectCard-1, .projectCard-2, .projectCard-3, .projectCard-4, .projectCard-5, .projectCard-6 {
+.projectCard-1,
+.projectCard-2,
+.projectCard-3,
+.projectCard-4,
+.projectCard-5,
+.projectCard-6 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +27,8 @@ content is in the center of the card. */
     width: 30vw;
     height: 20vw;
 }
-.projectCard-1, .projectCard-2, .projectCard-3 {
+.projectCard-1,
+.projectCard-2,
+.projectCard-3 {
     grid-row: 1;
 }

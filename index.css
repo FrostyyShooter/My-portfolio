@@ -22,14 +22,17 @@
 }
 
 /* body tabs */
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     overflow: visible;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
-.scroll-tab-1, .scroll-tab-2, .scroll-tab-3 {
+.scroll-tab-1,
+.scroll-tab-2,
+.scroll-tab-3 {
     scroll-snap-align: start;
     height: calc(100vh - 50px);
     padding-top: 50px;
@@ -44,24 +47,28 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.scroll-tab-1, .scroll-tab-2, .scroll-tab-3, .scroll-tab-4 {
+.scroll-tab-1,
+.scroll-tab-2,
+.scroll-tab-3,
+.scroll-tab-4 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tab-1-container{
+.tab-1-container {
     display: flex;
     align-items: center;
     background-color: var(--dark-grey-opacity-1);
     backdrop-filter: blur(5px);
     padding: 2.5em;
     border-radius: 30px;
-    color:var(--text-color);
+    color: var(--text-color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
-.tab-2-container, .tab-3-container, .tab-4-container {
+.tab-2-container,
+.tab-3-container,
+.tab-4-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -69,10 +76,13 @@ html, body{
     backdrop-filter: blur(5px);
     padding: 4em;
     border-radius: 30px;
-    color:var(--text-color);
+    color: var(--text-color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
-.tab-1-container, .tab-2-container, .tab-3-container, .tab-4-container {
+.tab-1-container,
+.tab-2-container,
+.tab-3-container,
+.tab-4-container {
     width: 60vw;
 }
 .tab-1-container h1 {
@@ -82,11 +92,16 @@ html, body{
     padding-top: 1em;
     font-size: 1.75em;
 }
-.tab-2-container h1, .tab-3-container h1, .tab-4-container h1 {
+.tab-2-container h1,
+.tab-3-container h1,
+.tab-4-container h1 {
     font-size: 2em;
     padding-bottom: 0.5em;
 }
-.tab-1-container p, .tab-2-container p, .tab-3-container p, .tab-4-container p {
+.tab-1-container p,
+.tab-2-container p,
+.tab-3-container p,
+.tab-4-container p {
     font-size: 1em;
 }
 .scroll-tab-1 img {
@@ -138,12 +153,15 @@ footer {
 /* phone design */
 @media screen and (max-width: 1115px) {
     /* remake nav-bar from top to bottom */
-    
+
     /* tab adjustment */
-    .tab-1-container, .tab-2-container, .tab-3-container, .tab-4-container {
+    .tab-1-container,
+    .tab-2-container,
+    .tab-3-container,
+    .tab-4-container {
         width: 60vw;
     }
-    .tab-1-container{
+    .tab-1-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -151,7 +169,7 @@ footer {
         backdrop-filter: blur(5px);
         padding: 2.5em;
         border-radius: 30px;
-        color:var(--text-color);
+        color: var(--text-color);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     }
     .tab-1-container h1 {
@@ -169,10 +187,15 @@ footer {
         padding-top: 1em;
         font-size: 1.5em;
     }
-    .tab-1-container p, .tab-2-container p, .tab-3-container p, .tab-4-container p {
+    .tab-1-container p,
+    .tab-2-container p,
+    .tab-3-container p,
+    .tab-4-container p {
         font-size: 1em;
     }
-    .tab-2-container, .tab-3-container, .tab-4-container {
+    .tab-2-container,
+    .tab-3-container,
+    .tab-4-container {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -180,7 +203,7 @@ footer {
         backdrop-filter: blur(5px);
         padding: 2.5em;
         border-radius: 30px;
-        color:var(--text-color);
+        color: var(--text-color);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     }
 }

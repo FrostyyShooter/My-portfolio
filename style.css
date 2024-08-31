@@ -1,5 +1,5 @@
 /* THIS IS THE MAIN CSS FILE FOR EVERY HTML FILE */
-@import url('assets/Fonts/Roboto/Roboto-Black.ttf');
+@import url("assets/Fonts/Roboto/Roboto-Black.ttf");
 
 :root {
     --main-font: "Roboto";
@@ -32,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
-    position:fixed;
+    position: fixed;
     backdrop-filter: blur(2px);
     z-index: 999;
     height: 50px;
@@ -45,13 +45,15 @@ body {
     padding: 11px 10px;
     transition: 0.3s;
 }
-.nav-bar a, #language-selector{
+.nav-bar a,
+#language-selector {
     border-radius: 10px;
 }
-.nav-bar a:hover, #language-selector:hover {
+.nav-bar a:hover,
+#language-selector:hover {
     border-radius: 10px;
     background-color: #00bfff;
-    color: #000
+    color: #000;
 }
 .buttons-right-side a {
     margin: 0;
