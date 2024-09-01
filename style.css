@@ -2,83 +2,106 @@
 @import url("assets/Fonts/Roboto/Roboto-Black.ttf");
 
 :root {
-    --main-font: "Roboto";
-    --light-cyan: #82eaff;
-    --cyan: #04d3fb;
-    --dark-cyan: #00738a;
-    --text-color: #d6f8ff;
-    --dark-grey-opacity-1: #04d3fb23;
-    --dark-grey-opacity-2: #04d3fb36;
+	--main-font: "Roboto";
+	--light-cyan: #82eaff;
+	--cyan: #04d3fb;
+	--dark-cyan: #00738a;
+	--dark-blue: #000940;
+	--text-color: #d6f8ff;
+	--dark-grey-opacity-1: #04d3fb23;
+	--dark-grey-opacity-2: #04d3fb36;
 }
 * {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 body {
-    font-family: var(--main-font);
+	font-family: var(--main-font);
 
-    height: 100%;
-    width: 100%;
-    background-image: url(images/conny-schneider-pREq0ns_p_E-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: url(images/conny-schneider-pREq0ns_p_E-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 /* navigation bar */
 .nav-bar {
-    width: 100%;
-    background-color: var(--dark-grey-opacity-2);
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5em;
-    position: fixed;
-    backdrop-filter: blur(2px);
-    z-index: 999;
-    height: 50px;
-    display: flex;
-    align-items: center;
+	width: 100%;
+	background-color: var(--dark-grey-opacity-2);
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5em;
+	position: fixed;
+	backdrop-filter: blur(2px);
+	z-index: 999;
+	height: 50px;
+	display: flex;
+	align-items: center;
 }
 .buttons-right-side a {
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 11px 10px;
-    transition: 0.3s;
+	text-decoration: none;
+	color: var(--text-color);
+	padding: 11px 10px;
+	transition: 0.3s;
 }
 .nav-bar a,
 #language-selector {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .nav-bar a:hover,
 #language-selector:hover {
-    border-radius: 10px;
-    background-color: #00bfff;
-    color: #000;
+	border-radius: 10px;
+	background-color: #00bfff;
+	color: #000;
 }
 .buttons-right-side a {
-    margin: 0;
+	margin: 0;
 }
 .home-button {
-    margin-left: 40px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--text-color);
-    padding: 7px 10px;
-    transition: 0.3s;
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--text-color);
+	padding: 7px 10px;
+	transition: 0.3s;
 }
 .home-button img {
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    margin-right: 10px;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	margin-right: 10px;
 }
 #language-selector {
-    background-color: transparent;
-    border: none;
-    font-size: inherit;
-    color: var(--text-color);
-    margin-right: 50px;
-    transition: 0.3s;
-    padding: 11px 10px;
+	background-color: transparent;
+	border: none;
+	font-size: inherit;
+	color: var(--text-color);
+	margin-right: 50px;
+	transition: 0.3s;
+	padding: 11px 10px;
+}
+
+/* Custom scrollbar */
+html {
+	background-color: var(--dark-blue);
+}
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--cyan);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--light-cyan);
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--dark-grey-opacity-2);
+	border-radius: 10px;
 }
