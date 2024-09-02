@@ -15,7 +15,7 @@
 	padding: 0;
 	margin: 0;
 }
-body {
+html {
 	font-family: var(--main-font);
 
 	height: 100%;

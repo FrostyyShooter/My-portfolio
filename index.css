@@ -118,7 +118,7 @@ html {
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 }
-.changelog h3 {
+.changelogDate {
 	scroll-snap-align: start;
 }
 .changelog ul {
