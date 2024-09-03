@@ -1,165 +1,238 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devon's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
-    <script src="script.js" defer></script>
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
-</head>
-<!-- 
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Devon's Portfolio</title>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+		<link
+			rel="stylesheet"
+			href="index.css" />
+		<script
+			src="script.js"
+			defer></script>
+		<!-- fonts -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+	</head>
+	<!-- 
 Make it first for desktop browser, then upload it to github.
 After that, make it for phone and tablet users. 
 -->
-<body>
-    <div class="background"></div>
-    <!-- english -->
-    <nav class="nav-bar">
-        <!-- implement svg to decorate the links -->
-        <div class="buttons-left-side">
-            <a href="index.html" class="home-button"><img src="images/FrostyyShooter.jpg" alt="FrostyyShooterLogo"> Frostyy</a>
-        </div>
-        <div class="buttons-right-side">
-            <a href="about.html">About me</a>
-            <a href="certificates.html">Certificates</a>
-            <a href="portfolio.html">Portfolio</a>
-            <!-- add dutch and english flag -->
-            <button id="language-selector">LANG</button>
-        </div>
-    </nav>
-    <!-- create a scroll button to go to the next page -->
-    <!-- <div class="scrollButton">
+	<body>
+		<div class="background"></div>
+		<!-- english -->
+		<nav class="nav-bar">
+			<!-- implement svg to decorate the links -->
+			<div class="buttons-left-side">
+				<a
+					href="index.html"
+					class="home-button"
+					><img
+						src="images/FrostyyShooter.jpg"
+						alt="FrostyyShooterLogo" />
+					Frostyy</a
+				>
+			</div>
+			<div class="buttons-right-side">
+				<a href="about.html">About me</a>
+				<a href="certificates.html">Certificates</a>
+				<a href="portfolio.html">Portfolio</a>
+				<!-- add dutch and english flag -->
+				<button id="language-selector">LANG</button>
+			</div>
+		</nav>
+		<!-- create a scroll button to go to the next page -->
+		<!-- <div class="scrollButton">
         <button id="scrollButton1" class="tab-button"></button>
         <button id="scrollButton2" class="tab-button"></button>
         <button id="scrollButton3" class="tab-button"></button>
         <button id="scrollButton4" class="tab-button"></button>
     </div> -->
-    <div class="scroll-page">
-        <div id="tab1" class="section scroll-tab-1">
-            <div class="tab-1-container">
-                <!-- This contains a picture and a small introduction to the site -->
-                    <img src="images/20240823_175941.jpg" alt="Profile picture">
-                <div class="tab1Text">
-                    <h1>Hello, I'm Devon!</h1>
-                    <h2>Welcome to my portfolio.</h2>
-                    <p>Please checkout my website to learn more about me and my work.</p>
-                </div>
-            </div>
-        </div>
-        <div id="tab2" class="section scroll-tab-2">
-            <div class="tab-2-container">
-                <h1>Why I builded this site?</h1>
-                <p>
-                    I built this website to showcase my skills in HTML, CSS, and JS.
-                    The main purpose is to display my certificates and portfolio, as well as to apply and demonstrate what I have learned.
-                    <br><br>To learn more about this site, please visit the "about" page.</span>
-                </p>
-                </p>
-            </div>
-        </div>
-        <div id="tab3" class="section scroll-tab-3">
-            <div class="tab-3-container">
-                <p>Credentials to the sites i learned from</p>
-            </div>
-        </div>
-        <div id="tab4" class="section scroll-tab-4">
-            <div class="tab-4-container">
-                <h1>Latest changes:</h1>
-                <!-- create changelog, put every date in a div??? so that every date with changes are grouped together -->
-                <div class="changelog">
-                    <div class="changelogDate">
-                        <h3>04-09-2024:</h3>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="changelogDate">
-                        <h3>03-09-2024:</h3>
-                        <ul>
-                            <li>Added offline font</li>
-                            <li>Bugfixes</li>
-                        </ul>
-                    </div>
-                    <div class="changelogDate">
-                        <h3>02-09-2024:</h3>
-                        <ul>
-                            <li>Added div around the changelog dates to style them</li>
-                            <li>Added snap scrolling and some new portfolio cards</li>
-                        </ul>
-                    </div>
-                    <div class="changelogDate">
-                        <h3>01-09-2024:</h3>
-                        <ul>
-                            <li>Added a custom scrollbar to the website</li>
-                            <li>Removed the scroll buttons</li>
-                            <li>Added scroll snapping to the changelog container</li>
-                            <li>Fixed some bugs</li>
-                        </ul>
-                    </div>
-                    <div class="changelogDate">
-                        <h3>31-08-2024:</h3>
-                        <ul>
-                            <li>Adjusted the WIP page for a larger monitor</li>
-                            <li>Started working on the certificates page</li>
-                        </ul>
-                    </div>
-                    <div class="changelogDate">
-                        <h3>30-08-2024:</h3>
-                        <ul>
-                            <li>Started working on the mobile version of the site</li>
-                            <li>Done the adjustments for the tabs</li>
-                            <li>Started working on the "projects" page</li>
-                        </ul>
-                    </div>
-                    <div class="changelogDate">
-                        <h3>29-08-2024:</h3>
-                        <ul>
-                            <li>Added 4 buttons to act as a scrollbar</li>
-                            <li>Tried debugging the scroll button, but it doesn't work (the scroll part)</li>
-                            <li>Added content to the second tab</li>
-                            <li>Reworked the color scheme of the site</li>
-                            <li>Added a changelog part</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <footer>
-        <div class="contact-info">
-            Created by Devon Weijand<br>
-            devonweijand@hotmail.com
-        </div>
-        <div class="personal-links">
-            <a href="https://www.linkedin.com/in/devon-weijand-55437a217/" target="_blank">
-                <img src="images/linkedin-app-white-icon.svg" alt="LinkedIn">
-            </a>
-            <a href="https://www.w3profile.com/FrostyyShooter" target="_blank">
-                <img src="images/img_aws_w3_logo.png" alt="W3Schools">
-            </a>
-            <a href="https://github.com/FrostyyShooter" target="_blank">
-                <img src="images/github-mark-white.svg" alt="GitHub">
-            </a>
-            <a href="https://www.frontendmentor.io/profile/FrostyyShooter" target="_blank">
-                <img src="images/frontendmentor-svgrepo-com.svg" alt="FrontEnd-Mentor" style="filter: invert(1);">
-            </a>
-            <a href="https://www.instagram.com/devon.070/" target="_blank">
-                <img src="images/instagram-seeklogo.svg" alt="Instagram" style="filter: invert(1);">
-            </a>
-            <a href="https://www.tiktok.com/@mgysgtdev?lang=en" target="_blank">
-                <img src="images/logo-tiktok-svgrepo-com.svg" alt="Tiktok">
-            </a>
-            <a href="https://discordapp.com/users/frostyyshooter#5576/" target="_blank">
-                <img src="images/discord-icon-svgrepo-com.svg" alt="Discord">
-            </a>
-        </div>
-    </footer>
-</div>
-</body>
+		<div class="scroll-page">
+			<div
+				id="tab1"
+				class="section scroll-tab-1">
+				<div class="tab-1-container">
+					<!-- This contains a picture and a small introduction to the site -->
+					<img
+						src="images/20240823_175941.jpg"
+						alt="Profile picture" />
+					<div class="tab1Text">
+						<h1>Hello, I'm Devon!</h1>
+						<h2>Welcome to my portfolio.</h2>
+						<p>Please checkout my website to learn more about me and my work.</p>
+					</div>
+				</div>
+			</div>
+			<div
+				id="tab2"
+				class="section scroll-tab-2">
+				<div class="tab-2-container">
+					<h1>Why I builded this site?</h1>
+					<p>
+						I built this website to showcase my skills in HTML, CSS, and JS. The main
+						purpose is to display my certificates and portfolio, as well as to apply and
+						demonstrate what I have learned.
+						<br /><br />To learn more about this site, please visit the "about" page.
+					</p>
+				</div>
+			</div>
+			<div
+				id="tab3"
+				class="section scroll-tab-3">
+				<div class="tab-3-container">
+					<!-- make the image and link update with the latest added project card -->
+					<a
+						href=""
+						class="projectImage">
+						<img
+							src=""
+							alt="Project image" />
+					</a>
+					<h1>Latest project</h1>
+					<a href="portfolio.html">Check out all my projects</a>
+				</div>
+			</div>
+			<div
+				id="tab4"
+				class="section scroll-tab-4">
+				<div class="tab-4-container">
+					<h1>Latest changes:</h1>
+					<!-- create changelog, put every date in a div??? so that every date with changes are grouped together -->
+					<div class="changelog">
+						<div class="changelogDate">
+							<h3>04-09-2024:</h3>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="changelogDate">
+							<h3>03-09-2024:</h3>
+							<ul>
+								<li>Added offline font</li>
+								Added the right content for "tab 3" from the index page
+								<li></li>
+								<li>Bugfixes</li>
+							</ul>
+						</div>
+						<div class="changelogDate">
+							<h3>02-09-2024:</h3>
+							<ul>
+								<li>Added div around the changelog dates to style them</li>
+								<li>Added snap scrolling and some new portfolio cards</li>
+							</ul>
+						</div>
+						<div class="changelogDate">
+							<h3>01-09-2024:</h3>
+							<ul>
+								<li>Added a custom scrollbar to the website</li>
+								<li>Removed the scroll buttons</li>
+								<li>Added scroll snapping to the changelog container</li>
+								<li>Fixed some bugs</li>
+							</ul>
+						</div>
+						<div class="changelogDate">
+							<h3>31-08-2024:</h3>
+							<ul>
+								<li>Adjusted the WIP page for a larger monitor</li>
+								<li>Started working on the certificates page</li>
+							</ul>
+						</div>
+						<div class="changelogDate">
+							<h3>30-08-2024:</h3>
+							<ul>
+								<li>Started working on the mobile version of the site</li>
+								<li>Done the adjustments for the tabs</li>
+								<li>Started working on the "projects" page</li>
+							</ul>
+						</div>
+						<div class="changelogDate">
+							<h3>29-08-2024:</h3>
+							<ul>
+								<li>Added 4 buttons to act as a scrollbar</li>
+								<li>
+									Tried debugging the scroll button, but it doesn't work (the
+									scroll part)
+								</li>
+								<li>Added content to the second tab</li>
+								<li>Reworked the color scheme of the site</li>
+								<li>Added a changelog part</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="contact-info">
+					Created by Devon Weijand<br />
+					<a href="mailto:devonweijand@hotmail.com">Contact me!</a>
+				</div>
+				<div class="personal-links">
+					<a
+						href="https://www.linkedin.com/in/devon-weijand-55437a217/"
+						target="_blank">
+						<img
+							src="images/linkedin-app-white-icon.svg"
+							alt="LinkedIn" />
+					</a>
+					<a
+						href="https://www.w3profile.com/FrostyyShooter"
+						target="_blank">
+						<img
+							src="images/img_aws_w3_logo.png"
+							alt="W3Schools" />
+					</a>
+					<a
+						href="https://github.com/FrostyyShooter"
+						target="_blank">
+						<img
+							src="images/github-mark-white.svg"
+							alt="GitHub" />
+					</a>
+					<a
+						href="https://www.frontendmentor.io/profile/FrostyyShooter"
+						target="_blank">
+						<img
+							src="images/frontendmentor-svgrepo-com.svg"
+							alt="FrontEnd-Mentor"
+							style="filter: invert(1)" />
+					</a>
+					<a
+						href="https://www.instagram.com/devon.070/"
+						target="_blank">
+						<img
+							src="images/instagram-seeklogo.svg"
+							alt="Instagram"
+							style="filter: invert(1)" />
+					</a>
+					<a
+						href="https://www.tiktok.com/@mgysgtdev?lang=en"
+						target="_blank">
+						<img
+							src="images/logo-tiktok-svgrepo-com.svg"
+							alt="Tiktok" />
+					</a>
+					<a
+						href="https://discordapp.com/users/frostyyshooter#5576/"
+						target="_blank">
+						<img
+							src="images/discord-icon-svgrepo-com.svg"
+							alt="Discord" />
+					</a>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>

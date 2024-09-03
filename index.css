@@ -44,7 +44,7 @@ html {
 }
 .scroll-tab-4 {
 	scroll-snap-align: start;
-	height: calc(100vh - 50px - 113px);
+	height: 100%;
 	padding-top: 50px;
 	display: flex;
 	justify-content: center;
@@ -114,6 +114,21 @@ html {
 	margin-right: 30px;
 }
 
+/* tab 3 */
+.tab-3-container {
+	align-items: center;
+}
+.projectImage {
+	border: 1px solid red;
+	width: 800px;
+	aspect-ratio: 16 / 9;
+}
+.tab-3-container a {
+	font-size: 1.25em;
+	text-decoration: underline;
+	color: var(--text-color);
+}
+
 /* changelog tab */
 .changelog {
 	height: 200px;
@@ -142,10 +157,13 @@ footer {
 	align-items: center;
 	text-align: center;
 }
-
 .contact-info {
 	font-size: 1.2em;
 	padding: 10px 0;
+}
+.contact-info a {
+	color: var(--text-color);
+	text-decoration: underline;
 }
 .personal-links a {
 	text-decoration: none;
@@ -156,7 +174,6 @@ footer {
 	margin: 10px 5px 10px;
 	fill: white;
 }
-
 /* phone design */
 @media screen and (max-width: 1115px) {
 	/* remake nav-bar from top to bottom */
