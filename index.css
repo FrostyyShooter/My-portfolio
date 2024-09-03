@@ -29,11 +29,14 @@ html {
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 }
+.scroll-page {
+	height: calc(100vh - 50px);
+}
 .scroll-tab-1,
 .scroll-tab-2,
 .scroll-tab-3 {
 	scroll-snap-align: start;
-	height: calc(100vh - 50px);
+	height: 100%;
 	padding-top: 50px;
 	display: flex;
 	justify-content: center;

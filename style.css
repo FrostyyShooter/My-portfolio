@@ -1,5 +1,8 @@
 /* THIS IS THE MAIN CSS FILE FOR EVERY HTML FILE */
-@import url("assets/Fonts/Roboto/Roboto-Black.ttf");
+@font-face {
+	font-family: "Roboto";
+	src: url("assets/Fonts/Roboto/Roboto-Medium.ttf");
+}
 
 :root {
 	--main-font: "Roboto";
