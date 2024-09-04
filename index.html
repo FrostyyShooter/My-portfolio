@@ -80,14 +80,18 @@ After that, make it for phone and tablet users.
 					<h1>Latest changes:</h1>
 					<div class="sortMenu">
 						<p>Sort by:</p>
-						<select name="Sort by" id="changelogSorting">
-							<option value="">Newest</option>
-							<option value="">Oldest</option>
-						</select>
+						<div class="changelogSortMenu">
+							<div class="custom-date-select">
+								<select id="dateSelector">
+									<option value="Newest">Newest ▲</option>
+									<option value="Oldest">Oldest ▼</option>
+								</select>
+							</div>
+						</div>
 					</div>
 					<!-- Create a sort button to sort everything by date from "Newest to Oldest" or visa versa -->
-					<div class="changelog">
-						<div class="changelogDate 04092024">
+					<div class="changelogContainer">
+						<div class="changelogDate" data-date="2024-09-04">
 							<h3>04-09-2024:</h3>
 							<ul>
 								<li>Reworked the language selector in the nav bar</li>
@@ -95,9 +99,10 @@ After that, make it for phone and tablet users.
 									Finished the language selector > still need to add the language
 									change function
 								</li>
+								<li>Added the script for the sort function of this changelog</li>
 							</ul>
 						</div>
-						<div class="changelogDate 03092024">
+						<div class="changelogDate" data-date="2024-09-03">
 							<h3>03-09-2024:</h3>
 							<ul>
 								<li>Added offline font</li>
@@ -105,14 +110,14 @@ After that, make it for phone and tablet users.
 								<li>Bugfixes</li>
 							</ul>
 						</div>
-						<div class="changelogDate 02092024">
+						<div class="changelogDate" data-date="2024-09-02">
 							<h3>02-09-2024:</h3>
 							<ul>
 								<li>Added div around the changelog dates to style them</li>
 								<li>Added snap scrolling and some new portfolio cards</li>
 							</ul>
 						</div>
-						<div class="changelogDate 01092024">
+						<div class="changelogDate" data-date="2024-09-01">
 							<h3>01-09-2024:</h3>
 							<ul>
 								<li>Added a custom scrollbar to the website</li>
@@ -121,14 +126,14 @@ After that, make it for phone and tablet users.
 								<li>Fixed some bugs</li>
 							</ul>
 						</div>
-						<div class="changelogDate 31082024">
+						<div class="changelogDate" data-date="2024-08-31">
 							<h3>31-08-2024:</h3>
 							<ul>
 								<li>Adjusted the WIP page for a larger monitor</li>
 								<li>Started working on the certificates page</li>
 							</ul>
 						</div>
-						<div class="changelogDate 30082024">
+						<div class="changelogDate" data-date="2024-08-30">
 							<h3>30-08-2024:</h3>
 							<ul>
 								<li>Started working on the mobile version of the site</li>
@@ -136,7 +141,7 @@ After that, make it for phone and tablet users.
 								<li>Started working on the "projects" page</li>
 							</ul>
 						</div>
-						<div class="changelogDate 29082024">
+						<div class="changelogDate" data-date="2024-08-29">
 							<h3>29-08-2024:</h3>
 							<ul>
 								<li>Added 4 buttons to act as a scrollbar</li>

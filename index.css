@@ -127,7 +127,7 @@ html {
 }
 
 /* changelog tab */
-.changelog {
+.changelogContainer {
 	height: 200px;
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
@@ -136,28 +136,116 @@ html {
 .tab-4-container h1 {
 	font-size: 2em;
 }
+
+/* sort menu */
 .sortMenu {
+	margin-top: 1.5em;
+	margin-bottom: 0.75em;
 	display: flex;
 	align-items: center;
-	margin-top: 0.25em;
-	margin-bottom: 1.5em;
-	font-size: 1.25em;
+}
+/* Style for the changelogSortMenu container */
+.changelogSortMenu {
+	position: relative;
+	display: inline-block;
+}
+
+/* Style for the custom-date-select container */
+.custom-date-select {
+	position: relative;
+	display: inline-block;
 }
 .sortMenu p {
-	margin-right: 0.5em;
+	padding: 11px 10px 10px;
+	background-color: var(--light-cyan);
+	border: 1px solid var(--light-cyan);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	color: #000;
 }
-#changelogSorting {
-	background-color: var(--dark-grey-opacity-2);
+/* Style for the select tag */
+.date-selected {
+	width: 100px;
+	padding: 10px 0 10px 20px;
+	border-top: 1px solid var(--light-cyan);
+	border-right: 1px solid var(--light-cyan);
+	border-bottom: 1px solid var(--light-cyan);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: var(--dark-grey-opacity-1);
+	color: var(--text-color);
+	appearance: none; /* Remove default arrow */
+	-webkit-appearance: none; /* Remove default arrow for Safari */
+	-moz-appearance: none; /* Remove default arrow for Firefox */
+	cursor: pointer;
+}
+/*
+.date-selected::after {
+	content: "▼";
 	font-size: 1em;
 	color: var(--text-color);
-	border-radius: 5px;
-	border: none;
-	padding: 4px;
+	margin-left: 20px;
 }
+*/
+/* Style for the select tag when focused */
+.custom-date-select select:focus {
+	border-color: #66afe9;
+	outline: none;
+	box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Style for the option tag */
+.custom-date-select select option {
+	background-color: #fff;
+	color: #333;
+	padding: 10px;
+}
+
+/* Style for the option tag when hovered */
+.custom-date-select select option:hover {
+	background-color: #66afe9;
+	color: #fff;
+}
+
+/* Hide the original select element */
+.custom-date-select select {
+	display: none;
+}
+
+/* Style for the custom dropdown menu */
+.custom-dropdown {
+	display: none;
+	position: absolute;
+	background-color: var(--cyan);
+	border: 1px solid var(--dark-cyan);
+	border-radius: 10px;
+	/* width: 100px; */
+	/* padding: 10px 0 10px 20px; */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	overflow: hidden;
+}
+
+/* Style for the custom dropdown items */
+.custom-dropdown-item {
+	width: 100px;
+	padding: 10px 0 10px 20px;
+	cursor: pointer;
+	color: #000;
+	display: flex;
+	align-items: center;
+}
+
+/* Style for the custom dropdown items on hover */
+.custom-dropdown-item:hover {
+	background-color: var(--dark-cyan);
+	color: var(--text-color);
+}
+
 .changelogDate {
 	scroll-snap-align: start;
 }
-.changelog ul {
+.changelogContainer ul {
 	list-style-type: disc;
 	padding-left: 20px;
 	padding-top: 0.5em;
