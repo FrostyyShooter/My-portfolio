@@ -34,14 +34,7 @@ html {
 }
 .scroll-tab-1,
 .scroll-tab-2,
-.scroll-tab-3 {
-	scroll-snap-align: start;
-	height: 100%;
-	padding-top: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+.scroll-tab-3,
 .scroll-tab-4 {
 	scroll-snap-align: start;
 	height: 100%;
@@ -49,6 +42,9 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.scroll-page .scroll-tab-4 {
+	height: calc(100vh - 50px - 113px);
 }
 .scroll-tab-1,
 .scroll-tab-2,
@@ -58,16 +54,14 @@ html {
 	justify-content: center;
 	align-items: center;
 }
-.tab-1-container {
+.scroll-page .tab-1-container {
+	flex-direction: row;
 	display: flex;
 	align-items: center;
-	background-color: var(--dark-grey-opacity-1);
-	backdrop-filter: blur(5px);
+	justify-content: start;
 	padding: 2.5em;
-	border-radius: 30px;
-	color: var(--text-color);
-	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
+.tab-1-container,
 .tab-2-container,
 .tab-3-container,
 .tab-4-container {
@@ -95,8 +89,7 @@ html {
 	font-size: 1.75em;
 }
 .tab-2-container h1,
-.tab-3-container h1,
-.tab-4-container h1 {
+.tab-3-container h1 {
 	font-size: 2em;
 	padding-bottom: 0.5em;
 }
@@ -113,7 +106,11 @@ html {
 	border-radius: 50%;
 	margin-right: 30px;
 }
-
+/* tab 2 */
+.tab-2-container a {
+	text-decoration: underline;
+	color: var(--text-color);
+}
 /* tab 3 */
 .tab-3-container {
 	align-items: center;
@@ -135,6 +132,27 @@ html {
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
+}
+.tab-4-container h1 {
+	font-size: 2em;
+}
+.sortMenu {
+	display: flex;
+	align-items: center;
+	margin-top: 0.25em;
+	margin-bottom: 1.5em;
+	font-size: 1.25em;
+}
+.sortMenu p {
+	margin-right: 0.5em;
+}
+#changelogSorting {
+	background-color: var(--dark-grey-opacity-2);
+	font-size: 1em;
+	color: var(--text-color);
+	border-radius: 5px;
+	border: none;
+	padding: 4px;
 }
 .changelogDate {
 	scroll-snap-align: start;
