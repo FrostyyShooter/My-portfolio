@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Certificates</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="certificates.css" />
+		<link rel="stylesheet" href="Stylesheet/style.css" />
+		<link rel="stylesheet" href="Stylesheet/certificates.css" />
 		<script src="script.js" defer></script>
 		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,27 +22,30 @@
 		<div class="background"></div>
 		<!-- english -->
 		<nav class="nav-bar">
+			<!-- implement svg to decorate the links -->
 			<div class="buttons-left-side">
-				<a href="index.html" class="home-button">
-					<img
-						src="/images/FrostyyShooter.jpg"
-						alt="FrostyyShooterLogo" />
-					Frostyy
-				</a>
+				<a href="index.html" class="home-button"
+					><img src="images/FrostyyShooter.jpg" alt="FrostyyShooterLogo" /> Frostyy</a
+				>
 			</div>
 			<div class="buttons-right-side">
-				<a href="about.html">About me</a>
-				<a href="certificates.html">Certificates</a>
-				<a href="portfolio.html">Portfolio</a>
+				<div>
+					<a href="about.html">About me</a>
+					<a href="certificates.html">Certificates</a>
+					<a href="portfolio.html">Portfolio</a>
+				</div>
 				<!-- add dutch and english flag -->
-				<button id="language-selector">LANG</button>
+				<div class="custom-select">
+					<select id="language-selector">
+						<option value="EN" data-image="images/sh.svg"></option>
+						<option value="NL" data-image="images/nl.svg"></option>
+					</select>
+				</div>
 			</div>
 		</nav>
 		<div class="scrollContainer">
 			<div class="certificate">
-				<a
-					href="https://verify.w3schools.com/6454HUVBT"
-					target="_blank">
+				<a href="https://verify.w3schools.com/6454HUVBT" target="_blank">
 					<img
 						src="images/certificates/certificate_of_completion_css.jpg"
 						alt="CSS Certificate" />
