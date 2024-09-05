@@ -111,23 +111,23 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 // tab 3 content
-document.addEventListener("DOMContentLoaded", function () {
-	fetch("portfolio.html")
-		.then((response) => {
-			if (!response.ok) {
-				throw new Error("Network response was not ok");
-			}
-			return response.text();
-		})
-		.then((data) => {
-			const parser = new DOMParser();
-			const doc = parser.parseFromString(data, "text/html");
-			const projectCard = doc.getElementById("latestProject");
-			if (projectCard) {
-				document.getElementById("tab-3-container").innerHTML = projectCard.outerHTML;
-			} else {
-				console.error('Element with ID "latestProject" not found.');
-			}
-		})
-		.catch((error) => console.error("Error loading content:", error));
-});
+// document.addEventListener("DOMContentLoaded", function () {
+// 	fetch("portfolio.html")
+// 		.then((response) => {
+// 			if (!response.ok) {
+// 				throw new Error("Network response was not ok");
+// 			}
+// 			return response.text();
+// 		})
+// 		.then((data) => {
+// 			const parser = new DOMParser();
+// 			const doc = parser.parseFromString(data, "text/html");
+// 			const projectCard = doc.getElementById("latestProject");
+// 			if (projectCard) {
+// 				document.getElementById("tab-3-container").innerHTML = projectCard.innerHTML;
+// 			} else {
+// 				console.error('Element with ID "latestProject" not found.');
+// 			}
+// 		})
+// 		.catch((error) => console.error("Error loading content:", error));
+// });

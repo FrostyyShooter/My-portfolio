@@ -112,19 +112,13 @@ html {
 	color: var(--text-color);
 }
 /* tab 3 */
-.tab-3-container {
-	align-items: center;
-}
-.projectImage {
-	border: 1px solid red;
-	width: 800px;
-	aspect-ratio: 16 / 9;
-}
-.tab-3-container a {
-	font-size: 1.25em;
-	text-decoration: underline;
-	color: var(--text-color);
-}
+/* .tab-3-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2fr 1fr 1fr 1fr;
+} */
+
+/* tab 3 content */
 
 /* changelog tab */
 .changelogContainer {
