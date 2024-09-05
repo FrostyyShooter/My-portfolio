@@ -1,7 +1,7 @@
 /* THIS IS THE MAIN CSS FILE FOR EVERY HTML FILE */
 @font-face {
 	font-family: "Roboto";
-	src: url("assets/Fonts/Roboto/Roboto-Medium.ttf");
+	src: url("../assets/Fonts/Roboto/Roboto-Medium.ttf");
 }
 
 :root {
@@ -23,7 +23,7 @@ html {
 
 	height: 100%;
 	width: 100%;
-	background-image: url(images/conny-schneider-pREq0ns_p_E-unsplash.jpg);
+	background-image: url(../images/conny-schneider-pREq0ns_p_E-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
