@@ -156,17 +156,20 @@ html {
 	display: inline-block;
 }
 .sortMenu p {
-	padding: 11px 10px 10px;
+	padding: 12px 10px 9px;
 	background-color: var(--light-cyan);
 	border: 1px solid var(--light-cyan);
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	color: #000;
+	height: 45px;
+	box-sizing: border-box;
 }
 /* Style for the select tag */
 .date-selected {
-	width: 100px;
-	padding: 10px 0 10px 20px;
+	box-sizing: border-box;
+	height: 45px;
+	width: 175px;
 	border-top: 1px solid var(--light-cyan);
 	border-right: 1px solid var(--light-cyan);
 	border-bottom: 1px solid var(--light-cyan);
@@ -178,6 +181,9 @@ html {
 	-webkit-appearance: none; /* Remove default arrow for Safari */
 	-moz-appearance: none; /* Remove default arrow for Firefox */
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /*
 .date-selected::after {
@@ -228,12 +234,14 @@ html {
 
 /* Style for the custom dropdown items */
 .custom-dropdown-item {
-	width: 100px;
+	box-sizing: border-box;
+	width: 175px;
 	padding: 10px 0 10px 20px;
 	cursor: pointer;
 	color: #000;
 	display: flex;
 	align-items: center;
+	transition: 0.3s;
 }
 
 /* Style for the custom dropdown items on hover */
